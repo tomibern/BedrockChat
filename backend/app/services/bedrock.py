@@ -7,11 +7,11 @@ from botocore.config import Config
 
 AVAILABLE_MODELS = [
     {
-        "id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+        "id": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
         "name": "Claude Haiku (rápido)",
     },
     {
-        "id": "us.anthropic.claude-sonnet-4-5-20251001-v1:0",
+        "id": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
         "name": "Claude Sonnet (potente)",
     },
 ]

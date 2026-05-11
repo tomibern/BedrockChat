@@ -10,7 +10,7 @@ class Message(BaseModel):
 class ChatRequest(BaseModel):
     message: str = Field(..., min_length=1)
     history: list[Message] = Field(default_factory=list)
-    model: str = "us.anthropic.claude-haiku-4-5-20251001-v1:0"
+    model: str = "eu.anthropic.claude-haiku-4-5-20251001-v1:0"
 
 
 class ChatResponse(BaseModel):
