@@ -1,6 +1,6 @@
 # AI Chat Assistant
 
-Chatbot web full-stack que usa Claude vía AWS Bedrock como motor de IA. Construido con FastAPI + Next.js, contenerizado con Docker y desplegable en AWS EC2.
+Chatbot web full-stack que usa Claude vía AWS Bedrock como motor de IA. Construido con FastAPI + Next.js y contenerizado con Docker.
 
 ## Stack
 
@@ -8,7 +8,6 @@ Chatbot web full-stack que usa Claude vía AWS Bedrock como motor de IA. Constru
 - **Frontend:** Next.js 14 (App Router) + TypeScript + Tailwind CSS
 - **IA:** AWS Bedrock — Claude (Haiku / Sonnet)
 - **Contenerización:** Docker + Docker Compose
-- **Deploy:** AWS EC2
 
 ## Estructura
 
@@ -30,8 +29,8 @@ ai-chat-assistant/
 
 1. Clonar el repo:
    ```bash
-   git clone <repo-url>
-   cd ai-chat-assistant
+   git clone https://github.com/tomibern/BedrockChat.git
+   cd BedrockChat
    ```
 
 2. Configurar variables del backend:
@@ -91,16 +90,6 @@ cd frontend
 npm install
 npm run dev
 ```
-
-## Deploy en EC2
-
-Resumen del flujo (ver documentación más detallada al finalizar el proyecto):
-
-1. Lanzar instancia EC2 (Ubuntu 22.04, t3.small mínimo).
-2. Instalar Docker + Docker Compose.
-3. Clonar el repo y configurar `backend/.env`.
-4. Configurar nginx como reverse proxy (puerto 80 → 3000 / 8000).
-5. (Opcional) HTTPS con Let's Encrypt + certbot.
 
 ## Licencia
 
