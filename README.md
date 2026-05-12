@@ -23,7 +23,7 @@ ai-chat-assistant/
 ### Requisitos
 
 - Docker + Docker Compose
-- Credenciales AWS con acceso a Bedrock (Claude habilitado en `us-east-1`)
+- Credenciales AWS con acceso a Bedrock (Claude habilitado en `eu-north-1`)
 
 ### Pasos
 
@@ -53,7 +53,7 @@ ai-chat-assistant/
 ```
 AWS_ACCESS_KEY_ID=...
 AWS_SECRET_ACCESS_KEY=...
-AWS_DEFAULT_REGION=us-east-1
+AWS_DEFAULT_REGION=eu-north-1
 ALLOWED_ORIGINS=http://localhost:3000
 ```
 
